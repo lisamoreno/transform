@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 #
 # Usage:
 #   ./transform --transformspec /path/to/transform-spec.json --dataset /path/to/dataset.csv
