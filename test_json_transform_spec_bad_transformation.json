@@ -1,0 +1,9 @@
+{
+    "spec_version": 1.0,
+    "transforms": [
+        {
+            "operation": "fake-transformation",
+            "column": "RecordedDate"
+        }
+    ]
+}
