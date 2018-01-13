@@ -1,7 +1,7 @@
 # transform
 
-Transforms a CSV dataset by applying operations listed in a JSON-based data transformation specification
-and returns them in a new file, `transformed_data.csv`.
+Transforms a CSV dataset by applying operations listed in a JSON-based data transformation specification.
+All data, including the modified values, is returned in a new file, `transformed_data.csv`.
 
 ## Contents
 
@@ -18,11 +18,16 @@ and returns them in a new file, `transformed_data.csv`.
 - Clone this repo:
   - `git clone https://github.com/lisamoreno/transform.git`
 - Install dependencies:
-  - `pip install --user -r requirements.txt`
+  - `pip install requirements.txt`
 
 ## Usage
 
 `./transform --transformspec /path/to/transform-spec.json --dataset /path/to/dataset.csv`
+
+- Sample transformation spec and dataset files are available in this repo
+- To use them, follow the [installation instructions](#installation), then run:
+  - `./transform --transformspec test_valid_json_transform_spec.json --dataset test_dataset.csv`
+
 
 ### Arguments
 
@@ -63,3 +68,5 @@ The following operations have been implemented and can be specified in your [tra
 - It can be used with other datasets.
 
 ## Testing
+
+- To run tests, simply run `./test.py`
